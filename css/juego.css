@@ -1,5 +1,5 @@
 .trapecio {
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 }
 
 #trapecioBase {
@@ -11,10 +11,7 @@
 .gameContainer {
     display: flex;
     flex-direction: column;
-
-    align-items: center;
     justify-content: flex-end;
-
     background-color: darkgreen;
     height: 100vh;
 }
@@ -27,19 +24,75 @@
     background-color: lightgray;
 }
 
-.primero {
+.coche {
+    background-color: blue;
+    height: 50px;
+    width: 100px;
+
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    z-index: 2;
+}
+
+.carretera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+/*--------------------------------------------------------------Carretera-------------------------------------------------- */
+
+/* La altura y anchura es el 80% con respecto al
+poligono anterior */
+
+/* T = trapecio, orden de abajo a arriba */
+
+#t1 {
     height: 10vh;
     width: 100vw;
 }
 
-.segundo {
-    height: 6vh;
-    width: 60vw;
+#t2 {
+    height: 8vh;
+    width: 80vw;
 }
 
-.tercero {
-    height: 4vh;
-    width: 36vw;
+#t3 {
+    height: 6.4vh;
+    width: 64vw;
 }
+
+#t4 {
+    height: 5.12vh;
+    width: 51.2vw;
+}
+
+#t5 {
+
+}
+
+#t6 {
+
+}
+
+#t7 {
+
+}
+
+#t8 {
+
+}
+
+#t9 {
+
+}
+
+#t10 {
+
+}
+
+/* ----------------------------------------------------Fin Carretera---------------------------------------- */
 
 
