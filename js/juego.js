@@ -1,13 +1,11 @@
 
-
-let i = 0;
 let tx = "t"; //Cada "t" es un trapecio, "x" es el numero del trapecio
 
 const movCarretera = () => {
 
     setInterval( () => {
 
-        for (i = 1; i < 13; i++) {
+        for (let i = 1; i < 12; i++) {
 
             tx = "t" + i;
 
