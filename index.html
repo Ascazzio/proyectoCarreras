@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slow Ride</title>
+    <title>Cannonball</title>
 
                       <!-- CSS -->
 
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/seleccion.css">
     <link rel="stylesheet" href="css/juego.css">
 </head>
-<body>
+<body onkeydown="keyEvent(event)">
     
                 <!-- Seleccion de coche -->
 
@@ -42,6 +42,9 @@
         <section class="gameContainer">
 
             <div class="carretera">
+
+                <img src="img/challenger.png" alt="" id="jugador" class="coche">
+
                 <div id="t11" class="trapecio ligth"></div>
                 <div id="t10" class="trapecio dark"></div>
                 <div id="t9" class="trapecio ligth"></div>
@@ -55,7 +58,7 @@
                 <div id="t1" class="trapecio ligth"></div>
             </div>
 
-            <div class="coche"></div>
+            
 
 
             

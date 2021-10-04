@@ -27,14 +27,25 @@
 }
 
 .coche {
-    background-color: blue;
-    height: 50px;
-    width: 100px;
-
-    position: absolute;
-    top: 10vh;
-    left: 50vw;
+    height: 200px;
+    width: 250px;
+    
+    position: relative;
+    top: 320px;
+    left: 0mm;
     z-index: 2;
+
+    transition: 500ms;
+}
+
+.der {
+    left: 320px;
+    transition: 500ms;
+}
+
+.izq {
+    left: -320px;
+    transition: 500ms;
 }
 
 .carretera {
@@ -49,7 +60,7 @@
 /* La altura y anchura es el 80% con respecto al
 poligono anterior */
 
-/* T = trapecio, orden de abajo a arriba */
+/* t = trapecio, orden de abajo a arriba */
 
 #t1 {
     height: 20mm;
