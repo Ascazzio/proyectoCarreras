@@ -2,10 +2,11 @@
     clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 }
 
-#trapecioBase {
-    background-color: gray;
-    height: 10vh;
-    width: 99vw;
+
+.centralizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gameContainer {
@@ -13,14 +14,15 @@
     flex-direction: column;
     justify-content: flex-end;
     background-color: darkgreen;
-    height: 100vh;
+    height: 750px;
+    width: 1200px;
 }
 
-.even {
+.dark {
     background-color: gray
 }
 
-.odd {
+.ligth {
     background-color: lightgray;
 }
 
@@ -50,47 +52,58 @@ poligono anterior */
 /* T = trapecio, orden de abajo a arriba */
 
 #t1 {
-    height: 10vh;
-    width: 100vw;
+    height: 20mm;
+    width: 315mm;
 }
 
 #t2 {
-    height: 8vh;
-    width: 80vw;
+    height: 16mm;
+    width: 252mm;
 }
 
 #t3 {
-    height: 6.4vh;
-    width: 64vw;
+    height: 12.8mm;
+    width: 201.6mm;
 }
 
 #t4 {
-    height: 5.12vh;
-    width: 51.2vw;
+    height: 10.24mm;
+    width: 161.28mm;
 }
 
 #t5 {
-
+    height: 8.192mm;
+    width: 129.024mm;
 }
 
 #t6 {
-
+    height: 6.5536mm;
+    width: 103.2192mm;
 }
 
 #t7 {
-
+    height: 5.24288mm;
+    width: 82.57536mm;
 }
 
 #t8 {
-
+    height: 4.194304mm;
+    width: 66.060288mm;
 }
 
 #t9 {
-
+    height: 3.3554432mm;
+    width: 52.8482304mm;
 }
 
 #t10 {
+    height: 2.68435456mm;
+    width: 42.27858432mm;
+}
 
+#t11 {
+    height: 2.14mm;
+    width: 33.82mm;
 }
 
 /* ----------------------------------------------------Fin Carretera---------------------------------------- */

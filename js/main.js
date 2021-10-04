@@ -9,5 +9,3 @@
 //     }
 // }
 
-tecla = prompt(KeyboardEvent.keyCode);
-console.log(tecla);
