@@ -1,22 +1,25 @@
 
+
+//        Modificador de trapecios
+
 let tx = "t"; //Cada "t" es un trapecio, "x" es el numero del trapecio
 
 const movCarretera = () => {
 
     setInterval( () => {
 
-        for (let i = 1; i < 12; i++) {
+        for (let i = 1; i < 12; i++) {       //Recorre cada "t" y cambia sus propiedades
 
-            tx = "t" + i;
+            tx = "t" + i;       
 
             if (document.getElementById(tx).classList.contains("ligth")) {
 
-                document.getElementById(tx).classList.add("dark");
+                document.getElementById(tx).classList.add("dark");              // Si es "claro", cambia a oscuro
                 document.getElementById(tx).classList.remove("ligth");
 
             } else {
                 document.getElementById(tx).classList.add("ligth");
-                document.getElementById(tx).classList.remove("dark");
+                document.getElementById(tx).classList.remove("dark");           // Y viseversa
             }
 
         }
@@ -25,6 +28,7 @@ const movCarretera = () => {
     }, 500);
 
 }
+
 
 //   Movimiento
 
@@ -43,20 +47,27 @@ const keyEvent = (event) => {
         case 39:
             console.log("pulsaste la flecha hacia derecha");
             
-            if (document.getElementById("jugador").classList.contains("izq")) {
-                document.getElementById("jugador").classList.remove("izq");
+            if (document.getElementById("jugador").classList.contains("izq")) {         // Si se encuentra en la derecha
+                document.getElementById("jugador").classList.remove("izq");             // Pase al medio
                 document.getElementById("jugador").src = "../img/challenger.png";
+
+                setTimeout(() => {
+                    carril = 2;
+                    console.log("carril =" + carril);    
+    
+                }, 250);
+
             } else {
                 document.getElementById("jugador").src = "../img/challengerIzq.png";
-                document.getElementById("jugador").classList.add("der");
+                document.getElementById("jugador").classList.add("der");                // Si ya se encuentra en el centro
+                                                                                        
+                setTimeout(() => {                                                      // Entoces cambiar a la derecha
+                    carril = 3;
+                    console.log("carril =" + carril);    
+    
+                }, 250);
+
             }
-
-            setTimeout(() => {
-                carril = carril + 1;    
-            }, 250);
-
-            console.log(carril);
-
             
         break;
 
@@ -68,26 +79,51 @@ const keyEvent = (event) => {
             if (document.getElementById("jugador").classList.contains("der")) {
                 document.getElementById("jugador").classList.remove("der");
                 document.getElementById("jugador").src = "../img/challenger.png";
+
+                setTimeout(() => {
+                    carril = 2;
+                    console.log("carril =" + carril);    
+                }, 250);
+
             } else {
                 document.getElementById("jugador").src = "../img/challengerDer.png";
                 document.getElementById("jugador").classList.add("izq");
+
+                setTimeout(() => {
+                    carril = 1;
+                    console.log("carril =" + carril);    
+                }, 250);
             }
-
-            setTimeout(() => {
-                carril = carril - 1;    
-            }, 250);
-
-            console.log(carril);
-
 
         break;
 
         default:
-        
+            console.log("Movimineto invalido");
         break;
     }
 
    
 }
 
+class trafico {
+    constructor(pos, modelo) {
+        this.pos = pos;
+        this.modelo = modelo;
+    }
+}
+
+const eliminar = (hijo) => {
+    let elemento = document.getElementById(hijo);
+    let padre = elemento.parentNode;
+    padre.removeChild(elemento);
+}
+
 movCarretera();
+document.getElementById("trafico").classList.add("traficoFinal");
+document.getElementById("traficoDer").classList.add("traficoFinalDer");
+
+
+// //Eliminar trafico
+// setTimeout(() => {
+//     eliminar("trafico");
+// }, 5000);

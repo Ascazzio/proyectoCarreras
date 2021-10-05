@@ -1,7 +1,8 @@
-.trapecio {
-    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-}
 
+body {
+    background-color: black;
+    margin: 0 0 0 0;
+}
 
 .centralizador {
     display: flex;
@@ -13,18 +14,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
     background-color: darkgreen;
     height: 750px;
     width: 1200px;
 }
 
-.dark {
-    background-color: gray
-}
-
-.ligth {
-    background-color: lightgray;
-}
+/* ----------------------Jugador----------------------- */
 
 .coche {
     height: 200px;
@@ -33,7 +29,7 @@
     position: relative;
     top: 320px;
     left: 0mm;
-    z-index: 2;
+    z-index: 3;
 
     transition: 500ms;
 }
@@ -48,14 +44,74 @@
     transition: 500ms;
 }
 
+/*-------------------------------------------------------*/
+/*----------------Trafico--------------------------------*/
+
+     /* Carril Central */
+
+.traficoInicial {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+
+    top: 300px;
+    z-index: 2;
+}
+
+.traficoFinal {
+    height: 220px;
+    width: 250px;
+
+    top: 600px;
+    transition: 5s;
+}
+
+
+     /* Carril derecho */
+
+.traficoInicialDer {
+    height: 40px;
+    width: 50px;
+    position: relative;
+
+    left: 0px;
+    top: 150px;
+    z-index: 2;
+}
+
+.traficoFinalDer {
+    height: 220px;
+    width: 250px;
+
+    left: 320px;
+    top: 600px;
+    transition: 5s;
+}
+
+    /* Carril Izquierdo */
+
+
+/*------------------------------------------------------ */
+/*-----------------Carretera---------------------------- */
+
+.trapecio {
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.dark {
+    background-color: gray
+}
+
+.ligth {
+    background-color: lightgray;
+}
+
 .carretera {
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
 }
-
-/*--------------------------------------------------------------Carretera-------------------------------------------------- */
 
 /* La altura y anchura es el 80% con respecto al
 poligono anterior */
