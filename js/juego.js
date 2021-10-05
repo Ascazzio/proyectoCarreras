@@ -121,6 +121,7 @@ const eliminar = (hijo) => {
 movCarretera();
 document.getElementById("trafico").classList.add("traficoFinal");
 document.getElementById("traficoDer").classList.add("traficoFinalDer");
+document.getElementById("traficoIzq").classList.add("traficoFinalIzq");
 
 
 // //Eliminar trafico

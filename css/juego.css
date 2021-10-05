@@ -29,7 +29,7 @@ body {
     position: relative;
     top: 320px;
     left: 0mm;
-    z-index: 3;
+    z-index: 5;
 
     transition: 500ms;
 }
@@ -76,7 +76,7 @@ body {
 
     left: 0px;
     top: 150px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .traficoFinalDer {
@@ -90,6 +90,24 @@ body {
 
     /* Carril Izquierdo */
 
+.traficoInicialIzq {
+    height: 40px;
+    width: 50px;
+    position: relative;
+
+    left: 0px;
+    top: 150px;
+    z-index: 2;
+}
+
+.traficoFinalIzq {
+    height: 220px;
+    width: 250px;
+
+    left: -320px;
+    top: 600px;
+    transition: 5s;
+}
 
 /*------------------------------------------------------ */
 /*-----------------Carretera---------------------------- */
