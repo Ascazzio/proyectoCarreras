@@ -8,65 +8,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cannonball</title>
+    <title>Drag Strip</title>
 
                       <!-- CSS -->
 
-    <link rel="stylesheet" href="css/presentacion.css">
-    <link rel="stylesheet" href="/css/seleccion.css">
-    <link rel="stylesheet" href="css/juego.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body onkeydown="keyEvent(event)">
     
-                <!-- Seleccion de coche -->
+    <div id="fase1" style="display: block;">
+        
+        <h1>Fase 1</h1>
 
-    <section class="selectContainer" style="display: none;">
-        <div class="selectCar"></div>
-        <div class="selectCar"></div>
-        <div class="selectCar"></div>
-        <div class="selectCar"></div>
-        <div class="selectCar"></div>
-        <div class="selectCar"></div>
-        <div class="selectCar"></div>
-        <div class="selectCar"></div>
-
-        <div class="selectInfo">
-            <h1>Selecciona tu coche</h1>
+        <div id="boton" onclick="fases('2')">
+            <p>Siguiente</p>
         </div>
-    </section>
 
-    <!-- ---------------------------------------------------------------------------------------------- -->
-
-                         <!-- Juego -->
-
-    <div class="centralizador">
-        <section class="gameContainer">
-
-            <div class="carretera">
-
-                <img src="img/van.png" alt="van" id="trafico" class="traficoInicial">
-                <img src="img/roverIzq.png" alt="rover" id="traficoDer" class="traficoInicialDer">
-                <img src="img/beattleDer.png" alt="beattle" id="traficoIzq" class="traficoInicialIzq">
-
-                <img src="img/challenger.png" alt="jugador" id="jugador" class="coche">
-
-                <div id="t11" class="trapecio ligth"></div>
-                <div id="t10" class="trapecio dark"></div>
-                <div id="t9" class="trapecio ligth"></div>
-                <div id="t8" class="trapecio dark"></div>
-                <div id="t7" class="trapecio ligth"></div>
-                <div id="t6" class="trapecio dark"></div>
-                <div id="t5" class="trapecio ligth"></div>
-                <div id="t4" class="trapecio dark"></div>
-                <div id="t3" class="trapecio ligth"></div>
-                <div id="t2" class="trapecio dark"></div>
-                <div id="t1" class="trapecio ligth"></div>
-
-            </div>
-            
-        </section>
     </div>
-    <script src="js/juego.js"></script>
+    
+    <div id="fase2" style="display: none;">
+        
+        <h1>Fase 2</h1>
+
+        <div id="boton" onclick="fases('3')">
+            <p>Siguiente</p>
+        </div>
+
+    </div>
+
+    <div id="fase3" style="display: none;">
+        
+        <h1>Fase 3</h1>
+
+        <div id="boton" onclick="fases('4')">
+            <p>Siguiente</p>
+        </div>
+
+    </div>
+
+    <div id="fase4" style="display: none;">
+        
+        <h1>Fase 4</h1>
+
+        <div id="boton" onclick="fases('1')">
+            <p>Siguiente</p>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>

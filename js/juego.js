@@ -40,7 +40,9 @@ const keyEvent = (event) => {
     switch(event.keyCode){
         case 32:
             console.log("pulsaste la barra espaciadora");
-            
+            document.getElementById("trafico").classList.add("traficoFinal");
+            document.getElementById("traficoDer").classList.add("traficoFinalDer");
+            document.getElementById("traficoIzq").classList.add("traficoFinalIzq");
         break;
 
         //Derecha
@@ -119,9 +121,7 @@ const eliminar = (hijo) => {
 }
 
 movCarretera();
-document.getElementById("trafico").classList.add("traficoFinal");
-document.getElementById("traficoDer").classList.add("traficoFinalDer");
-document.getElementById("traficoIzq").classList.add("traficoFinalIzq");
+
 
 
 // //Eliminar trafico

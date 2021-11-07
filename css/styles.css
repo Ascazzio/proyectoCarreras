@@ -1,0 +1,23 @@
+
+#boton {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+
+#fase1 {
+    background-color: yellow;
+}
+
+#fase2 {
+    background-color: blue;
+}
+
+#fase3 {
+    background-color: purple;
+}
+
+#fase4 {
+    background-color: darkgreen;
+}

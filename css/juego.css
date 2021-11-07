@@ -22,6 +22,24 @@ body {
 
 /* ----------------------Jugador----------------------- */
 
+.fogTop {
+    background-color: white;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    z-index: 5;
+}
+
+.fog {
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 400px;
+}
+
 .coche {
     height: 200px;
     width: 250px;
@@ -83,8 +101,8 @@ body {
     height: 220px;
     width: 250px;
 
-    left: 320px;
-    top: 600px;
+    left: 380px;
+    top: 765px;
     transition: 5s;
 }
 
@@ -104,8 +122,8 @@ body {
     height: 220px;
     width: 250px;
 
-    left: -320px;
-    top: 600px;
+    left: -380px;
+    top: 554px;
     transition: 5s;
 }
 
