@@ -13,6 +13,8 @@
                       <!-- CSS -->
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carSelect.css">
+
 </head>
 <body onkeydown="keyEvent(event)">
     
@@ -28,10 +30,65 @@
     
     <div id="fase2" style="display: none;">
         
-        <h1>Fase 2</h1>
+        <div class="containerSelection">
 
-        <div id="boton" onclick="fases('3')">
-            <p>Siguiente</p>
+            <div class="fairlady">
+                <img id="fairlady" class="imgSelection" src="img/fairladyL.png" alt="fairlady" onclick="select('fairlady')">
+            </div>
+
+            <div class="z28">
+                <img id="z28" class="imgSelection" src="img/z28L.png" alt="z28" onclick="select('z28')">
+            </div>
+
+            <div class="challenger">
+                <img id="challenger" class="imgSelection" src="img/challengerL.png" alt="challenger" onclick="select('challenger')">
+            </div>
+
+            <div class="z28Stats">
+                <p>Z28</p>
+            </div>
+
+            <div class="fairladyStats">
+                <p>Fairlady</p>
+            </div>
+
+            <div class="challengerStats">
+                <p>Challenger</p>
+            </div>
+
+            <div class="corvette">
+                <img id="corvette" class="imgSelection" src="img/corvetteL.png" alt="corvette" onclick="select('corvette')">
+            </div>
+
+            <div class="miura">
+                <img id="miura" class="imgSelection" src="img/miuraL.png" alt="miura" onclick="select('miura')">
+            </div>
+
+            <div class="ferrari">
+                <img id="ferrari" class="imgSelection" src="img/ferrariL.png" alt="ferrari" onclick="select('ferrari')">
+            </div>
+
+            <div class="corvetteStats">
+                <p>Corvette</p>
+
+            </div>
+            <div class="miuraStats">
+                <p>Miura</p>
+
+            </div>
+            <div class="ferrariStats">
+                <p>Ferrari</p>
+
+            </div>
+
+            <div class="menu">
+
+                <div id="next" onclick="fases('3')">
+                    <p>Siguiente</p>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
